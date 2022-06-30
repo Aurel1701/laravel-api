@@ -9,6 +9,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import App from './views/App';
+import router from './router';
 
 /**
  * The following block of code may be used to automatically register your
@@ -31,6 +32,7 @@ import App from './views/App';
 
 const app = new Vue({
     el: '#root',
-    render: h => h(App)
+    render: h => h(App),
+    router,
 });
 
